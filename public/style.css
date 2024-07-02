@@ -1,0 +1,86 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    color: #333; /* Dark gray for title */
+  }
+  
+  /* Chat container */
+  #chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White chat window background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Message input and button */
+  #message-input,
+  #sendBtn {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #message-input {
+    width: 100%;
+    background-color: #eee; /* Light gray input background */
+  }
+  
+  #sendBtn {
+    background-color: #4CAF50; /* Green send button */
+    color: #fff; /* White text for send button */
+    cursor: pointer;
+  }
+  
+  #sendBtn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+  /* Message list */
+  #messages {
+    flex: 1; /* Take up remaining space in chat container */
+    overflow: auto; /* Enable scrolling for long chats */
+    padding: 10px;
+  }
+  
+  .message {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .received {
+    background-color: #eee; /* Light gray for received messages */
+    color: #333; /* Dark gray text for received messages */
+    margin-right: auto;
+  }
+  
+  .sent {
+    background-color: #4CAF50; /* Green for sent messages */
+    color: #fff; /* White text for sent messages */
+    margin-left: auto;
+  }
+  
+  /* Optional styling for user names (if implemented) */
+  .username {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
